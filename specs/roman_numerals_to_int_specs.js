@@ -13,4 +13,16 @@ describe('romanNumeralsToInt', () => {
   it('should be able to convert X to 10', () => {
     expect(romanNumeralsToInt('X')).to.deep.equal(10);
   });
+
+  it('should be able to convert XXV to 25', () => {
+    expect(romanNumeralsToInt('XXV')).to.deep.equal(25);
+  });
+
+  it('should be able to convert CMXCIV to 994', () => {
+    expect(romanNumeralsToInt('CMXCIV')).to.deep.equal(994);
+  });
+
+  it('should be able to convert MMMCDXLIX to 3449', () => {
+    expect(romanNumeralsToInt('MMMCDXLIX')).to.deep.equal(3449);
+  });
 });
