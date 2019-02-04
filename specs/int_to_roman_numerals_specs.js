@@ -13,4 +13,12 @@ describe('intToRomanNumerals', () => {
   it('should be able to convert 10 to X', () => {
     expect(intToRomanNumerals(10)).to.deep.equal('X');
   });
+
+  it('should be able to convert 27 to XXVII', () => {
+    expect(intToRomanNumerals(27)).to.deep.equal('XXVII');
+  });
+
+  it('should be able to convert 1315 to MCCCXV', () => {
+    expect(intToRomanNumerals(1315)).to.deep.equal('MCCCXV');
+  });
 });

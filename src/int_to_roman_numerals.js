@@ -1,10 +1,14 @@
 function intToRomanNumerals(num) {
-  const romanNumeralsMap = {
-    X: 10, V: 5, I: 1
+  const numeralValues = {
+    M: 1000, D: 500, C: 100,
+    L: 50, X: 10, V: 5, I: 1
   };
   result = '';
-  Object.keys(romanNumeralsMap).forEach((key) => {
-    if (romanNumeralsMap[key] === num) result += key;
+  Object.keys(numeralValues).forEach((key) => {
+    while (Math.floor(num / numeralValues[key]) > 0) {
+      result += key;
+      num -= numeralValues[key];
+    }
   });
   return result;
 }
