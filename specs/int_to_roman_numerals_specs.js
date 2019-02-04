@@ -21,4 +21,12 @@ describe('intToRomanNumerals', () => {
   it('should be able to convert 1315 to MCCCXV', () => {
     expect(intToRomanNumerals(1315)).to.deep.equal('MCCCXV');
   });
+
+  it('should be able to convert 94 to XCIV', () => {
+    expect(intToRomanNumerals(94)).to.deep.equal('XCIV');
+  });
+
+  it('should be able to convert 2949 to MMCMXLIX', () => {
+    expect(intToRomanNumerals(2949)).to.deep.equal('MMCMXLIX');
+  });
 });
