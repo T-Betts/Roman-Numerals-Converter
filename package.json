@@ -1,0 +1,15 @@
+{
+  "name": "roman-numerals-converter",
+  "version": "1.0.0",
+  "description": "A program that can convert integers to Roman numerals and vice versa.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha **/*specs.js"
+  },
+  "author": "Tom Betts",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0"
+  }
+}
