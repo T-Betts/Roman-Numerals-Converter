@@ -11,7 +11,7 @@ class RomanNumeralConverter {
     const nv = this.numeralValues;
     let result = '';
     Object.keys(nv).forEach((key) => {
-      while (Math.floor(num / nv[key]) > 0) {
+      while (num - nv[key] >= 0) {
         result += key;
         num -= nv[key];
       }
